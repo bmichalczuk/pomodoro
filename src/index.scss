@@ -6,8 +6,15 @@
     box-sizing: inherit;
 }
 
-html {
+:root {
   font-size: 100%;
+  //colors
+  --backgroundDark: #718085;
+  --backgroundLight: #e2d5d5;
+  --primary: #fefefe;
+  --secondary: #000000;
+  --workColor: #ffa600;
+  --breakColor: #00ff00;
 }
 
 body {
