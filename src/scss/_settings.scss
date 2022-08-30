@@ -1,0 +1,87 @@
+/* <div class="settings settings--work">
+                <div class="settings__title">Time</div>
+                <div class="settings__controls">
+                    <button id="work-increase" class="settings__control" title="Increase work time"><span class="sr-only">Increase work time</span>+</button>
+                    <div id="work-value" class="settings__value">30</div>
+                    <button id="work-decrease" class="settings__control" title="Decrease work time"><span class="sr-only">Decrease work time</span>-</button>
+                </div>
+                
+            </div>
+            <div class="settings settings--break">
+                <div class="settings__title">Break</div>
+                <div class="settings__controls">
+                    <button id="break-increase" class="settings__control" title="Increase break time"><span class="sr-only">Increase break time</span>+</button>
+                    <div id="break-value" class="settings__value">5</div>
+                    <button id="break-decrease" class="settings__control" title="Decrease brek time"><span class="sr-only">Decrease work time</span>-</button>
+                </div>
+            </div>*/
+
+.settings-wrapper {
+    min-width: 95%;
+    margin: 3em auto 0;
+    border: 2px solid var(--secondary);
+    display: flex;
+
+    @media (min-width: 70em) {
+        min-width: 70%;
+    }
+
+    @media (min-width: 90em) {
+        min-width: 50%;
+    }
+
+}
+
+.settings {
+    flex: 1 1 auto;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border: 1px solid var(--secondary);
+    text-align: center;
+
+    
+    &__title,
+    &__value {
+        color: var(--primary);
+        padding: .1em;
+    }
+
+    
+    &__title {
+        border-bottom: solid 2px var(--secondary);
+        letter-spacing: 1px;
+    }
+
+    &__controls {
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+    }
+
+    &__control,
+    &__value {
+        flex: 1 1 30%;
+    }
+
+    &__control {
+        background: transparent;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        &:focus,
+        &:hover {
+            background-color: var(--backgroundLight);
+            cursor: pointer;
+        }
+    }
+
+    &__value {
+        font-size: 2rem;;
+        border-left: 1px solid var(--secondary);
+        border-right: 1px solid var(--secondary);
+
+    }
+}
