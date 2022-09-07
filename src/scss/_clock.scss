@@ -1,0 +1,59 @@
+.clock {
+    position: relative;
+    width: 90vw;
+    height: 90vw;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 2em;
+    border: 3px solid var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media(min-width: 30em) {
+        width: 60vh;
+        height: 60vh;
+    }
+
+    &__start-stop {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        background-color: transparent;
+        border: none;
+        z-index: 3;
+        &:hover,
+        &:active {
+            cursor: pointer;
+        }
+    }
+    
+    &__time-left {
+        font-size: 4rem;
+        color: var(--primary);
+        z-index: 2;
+
+        
+        @media(min-width: 70em) {
+            font-size: 6rem;
+        }
+    }
+
+    &__time-indicator {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        &--work {
+            background: var(--workColor);
+        }
+
+        &--break {
+            background: var(--breakColor);
+        }
+    }
+}
