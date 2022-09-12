@@ -1,6 +1,7 @@
-import {State} from "./types";
+import {State, CountdownMode} from "./types";
 
 const state: State = {
+    countdown: false,
     workTime: 25,
     breakTime: 5,
     currentMode: "work",
@@ -11,7 +12,7 @@ export const setWorkTime = (time: number) => state.workTime = time;
 
 export const setBreakTime = (time: number) => state.breakTime = time;
 
-export const switchCurrentMode = (mode: "work" | "break") => state.currentMode = mode;
+export const switchCurrentMode = (mode: CountdownMode) => state.currentMode = mode;
 
 export const setTimeLeft = (timeLeft: number) => state.timeLeft = timeLeft;
 
