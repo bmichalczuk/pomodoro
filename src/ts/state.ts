@@ -8,6 +8,7 @@ const state: State = {
     timeLeft: 60*30,
 };
 
+
 export const setWorkTime = (time: number) => state.workTime = time;
 
 export const setBreakTime = (time: number) => state.breakTime = time;

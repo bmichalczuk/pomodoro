@@ -16,4 +16,13 @@ export type AppEvent = "work-time-changed"
 
 export type CountdownMode = "work" | "break";
 
+export interface AppEventsObj {
+    ["work-time-changed"]: Array<Function> | [],
+    ["break-time-changed"]: Array<Function> | [], 
+    ["work-time-changed"]: Array<Function> | [],
+    ["time-left-changed"]: Array<Function> | [],
+    ["countdown-started"]: Array<Function> | [],
+    ["countdown-paused"]: Array<Function> | [],
+    ["mode-changed"]: Array<Function> | [],
+}
 
