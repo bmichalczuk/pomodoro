@@ -1,9 +1,19 @@
-const workIcreaseBtn = document.querySelector("#work-increase");
-const workDecreaseBtn = document.querySelector("#work-decrease");
-const breakIcreaseBtn = document.querySelector("#break-increase");
-const breakDecreaseBtn = document.querySelector("#break-decrease");
-const workValueDisplay = document.querySelector("#work-value");
-const workBreakDisplay = document.querySelector("#break-value");
-const startStopBtn = document.querySelector("#start-stop");
-const timeLeftDisplay = document.querySelector("#time-left");
-const timeIndicator = document.querySelector("#time-indicator");
+import {workIcreaseId,
+    workDecreaseId,
+    breakIcreaseId,
+    breakDecreaseId,
+    workValueDisplayId,
+    breakValueDisplayId,
+    startStopId,
+    timeLeftDisplayId,
+    timeIndicatorId} from "./constants";
+
+const workIcreaseBtn = document.querySelector(workIcreaseId);
+const workDecreaseBtn = document.querySelector(workDecreaseId);
+const breakIcreaseBtn = document.querySelector(breakIcreaseId);
+const breakDecreaseBtn = document.querySelector(breakDecreaseId);
+const workValueDisplay = document.querySelector(workValueDisplayId);
+const workBreakDisplay = document.querySelector(breakValueDisplayId);
+const startStopBtn = document.querySelector(startStopId);
+const timeLeftDisplay = document.querySelector(timeLeftDisplayId);
+const timeIndicator = document.querySelector(timeIndicatorId);

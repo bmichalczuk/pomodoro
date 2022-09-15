@@ -1,16 +1,23 @@
-import { AppEvent, AppEventsObj } from "./types"
+import { AppEvent, AppEventsObj, State } from "./types"
 import getState from "./state";
+import {
+    workTimeChanged, 
+    breakTimeChanged, 
+    timeLeftChanged, 
+    countdownPaused, 
+    countdownStarted, 
+    modeChanged} from "./constants";
 
 const appEvents: AppEventsObj = {
-    "work-time-changed" : [],
-    "break-time-changed": [], 
-    "time-left-changed": [],
-    "countdown-started": [],
-    "countdown-paused": [],
-    "mode-changed": []
+    [workTimeChanged] : [],
+    [breakTimeChanged]: [], 
+    [timeLeftChanged]: [],
+    [countdownPaused]: [],
+    [countdownStarted]: [],
+    [modeChanged]: []
 }
 
-export const subsribeEvent = (event: AppEvent, callback: Function) => {
+export const subsribeEvent = (event: AppEvent, callback: (state: State) => void) => {
     appEvents[event] = [...appEvents[event], callback];
 };
 

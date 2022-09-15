@@ -1,10 +1,11 @@
 import {State, CountdownMode} from "./types";
+import {workTime} from "./constants"
 
 const state: State = {
     countdown: false,
     workTime: 25,
     breakTime: 5,
-    currentMode: "work",
+    currentMode: workTime,
     timeLeft: 60*30,
 };
 
