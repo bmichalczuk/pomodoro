@@ -8,12 +8,12 @@ import {workIcreaseId,
     timeLeftDisplayId,
     timeIndicatorId} from "./constants";
 
-const workIcreaseBtn = document.querySelector(workIcreaseId);
-const workDecreaseBtn = document.querySelector(workDecreaseId);
-const breakIcreaseBtn = document.querySelector(breakIcreaseId);
-const breakDecreaseBtn = document.querySelector(breakDecreaseId);
-const workValueDisplay = document.querySelector(workValueDisplayId);
-const workBreakDisplay = document.querySelector(breakValueDisplayId);
-const startStopBtn = document.querySelector(startStopId);
-const timeLeftDisplay = document.querySelector(timeLeftDisplayId);
-const timeIndicator = document.querySelector(timeIndicatorId);
+export const workIcreaseBtn = document.querySelector(workIcreaseId);
+export const workDecreaseBtn = document.querySelector(workDecreaseId);
+export const breakIcreaseBtn = document.querySelector(breakIcreaseId);
+export const breakDecreaseBtn = document.querySelector(breakDecreaseId);
+export const workValueDisplay = document.querySelector(workValueDisplayId);
+export const workBreakDisplay = document.querySelector(breakValueDisplayId);
+export const startStopBtn = document.querySelector(startStopId);
+export const timeLeftDisplay = document.querySelector(timeLeftDisplayId);
+export const timeIndicator = document.querySelector(timeIndicatorId);
