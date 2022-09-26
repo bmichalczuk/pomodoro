@@ -1,4 +1,4 @@
-import { AppEvent, AppEventsObj, State } from "./types"
+import { AppEvent, AppEventsObj, State, SubsribeCallback } from "./types"
 import getState from "./state";
 import {
     workTimeChanged, 
@@ -17,8 +17,11 @@ const appEvents: AppEventsObj = {
     [modeChanged]: []
 }
 
-export const subsribeEvent = (event: AppEvent, callback: (state: State) => void) => {
-    appEvents[event] = [...appEvents[event], callback];
+export const subsribeEvent = (event: AppEvent, callback: SubsribeCallback) => {
+    if(typeof callback === "function") {
+       return appEvents[event] = [...appEvents[event], callback];
+    } 
+      return appEvents[event] = [...appEvents[event], ...callback];
 };
 
 export const fireEvent = (event: AppEvent) => {

@@ -35,3 +35,5 @@ export interface AppEventsObj {
     [modeChanged]: Array<Function> | [],
 }
 
+export type SubsribeCallback = ((state: State) => void) | (Array<(state: State) => void>)
+
