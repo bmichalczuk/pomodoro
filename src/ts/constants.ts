@@ -18,3 +18,5 @@ export const timeIndicatorId = "#time-indicator";
 //
 export const workTime = "work";
 export const breakTime = "break";
+//
+export const timeStep = 5;

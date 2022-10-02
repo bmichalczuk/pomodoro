@@ -24,6 +24,7 @@ export type AppEvent = typeof workTimeChanged
     | typeof countdownStarted
     | typeof modeChanged;
 
+
 export type CountdownMode = typeof workTime | typeof breakTime;
 
 export interface AppEventsObj {
@@ -35,5 +36,7 @@ export interface AppEventsObj {
     [modeChanged]: Array<Function> | [],
 }
 
-export type SubsribeCallback = ((state: State) => void) | (Array<(state: State) => void>)
+export type SubsribeCallback = ((state: State) => void) | (Array<(state: State) => void>);
+
+
 
