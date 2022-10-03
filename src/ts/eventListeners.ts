@@ -1,6 +1,6 @@
 import getState, { setBreakTime, setWorkTime } from "./state";
 import { CountdownMode } from "./types";
-import { timeStep, workTime, breakTime, workTimeChanged, breakTimeChanged } from "./constants";
+import { timeStep, workTime, breakTime, workTimeChanged, breakTimeChanged, countdownPaused, countdownStarted } from "./constants";
 import { fireEvent } from "./pubSub";
 
 const changeModeTime = (
@@ -35,4 +35,10 @@ export const decreaseBreakTime = () => changeModeTime(
     breakTimeChanged, 
     getState().breakTime - timeStep
 );
+
+export const handleStartStop = (countdownStatus: boolean) => countdownStatus 
+    ? fireEvent(countdownPaused) 
+    : fireEvent(countdownStarted);
+
+
 
