@@ -38,5 +38,9 @@ export interface AppEventsObj {
 
 export type SubsribeCallback = ((state: State) => void) | (Array<(state: State) => void>);
 
+export enum modeValue {
+    breakValue = "breakValue",
+    workValue = "workValue"
+}
 
 
