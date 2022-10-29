@@ -18,6 +18,8 @@ export const switchCurrentMode = (mode: CountdownMode) => state.currentMode = mo
 
 export const setTimeLeft = (timeLeft: number) => state.timeLeft = timeLeft;
 
+export const setCoundown = (countdown: boolean) => state.countdown = countdown;
+
 const getState = () => state;
 
 export default getState;
