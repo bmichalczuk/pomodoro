@@ -8,6 +8,6 @@ export const increaseBreakTimeBtn = document.querySelector(BREAK_TIME_INCREASE_B
 export const decreaseBreakTimeBtn = document.querySelector(BREAK_TIME_DECREASE_BTN) as HTMLButtonElement;
 export const breakTimeDisplay = document.querySelector(BREAK_TIME_DISPLAY);
 
-export const timeLeftIndicato = document.querySelector(TIME_LEFT_INDICATOR);
-export const timeLeftDisplay = document.querySelector(IIME_LEFT_DISPLAY);
+export const timeLeftIndicator = document.querySelector(TIME_LEFT_INDICATOR) as HTMLElement;
+export const timeLeftDisplay = document.querySelector(IIME_LEFT_DISPLAY) as HTMLElement;
 export const startStopBtn = document.querySelector(START_STOP_BTN) as HTMLButtonElement;
