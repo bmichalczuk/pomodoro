@@ -6,7 +6,8 @@ enum EVENTS_LIST {
     startedTimer = 'startTimer',
     stopedTimer = 'stopTimer',
     changedRound = 'changedRound',
-    resetTimer = 'resetTimer'
+    resetTimer = 'resetTimer',
+    changedCurrentTimeLeft = 'changedCurrentTimeLeft'
 }
 
 type EventCallback = (State: {}) => void;
@@ -22,6 +23,7 @@ const EVENTS: EventsType = {
     [EVENTS_LIST.startedTimer]: [],
     [EVENTS_LIST.stopedTimer]: [],
     [EVENTS_LIST.resetTimer]: [],
+    [EVENTS_LIST.changedCurrentTimeLeft]: []
 };
 
 //fireEvent
