@@ -38,12 +38,12 @@ export const changeBreakTime = (newTime: number) => {
     }
     state.breakTime = newTime;
     return fireEvent(EVENTS_LIST.changedBreakTime);
-}
+};
 
 export const changeRound = (newRound: Round) => {
     state.round = newRound;
     return fireEvent(EVENTS_LIST.changedRound);
-}
+};
 
 export const changeRunningStatus = () => {
     state.running = !state.running;
@@ -51,7 +51,7 @@ export const changeRunningStatus = () => {
         return fireEvent(EVENTS_LIST.startedTimer);
     }
     return fireEvent(EVENTS_LIST.stopedTimer);
-}
+};
 
 export const changeCurrentTimeLeft = (newCurrentTimeLeft: number) => {
     state.currentTimeLeft = newCurrentTimeLeft;
